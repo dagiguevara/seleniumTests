@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 49.33 sec <<< FAILURE!
+afterMethod(roadrurnner.dashboard.loginTestCase)  Time elapsed: 28.454 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at roadrurnner.dashboard.loginTestCase.afterMethod(loginTestCase.java:28)
+
