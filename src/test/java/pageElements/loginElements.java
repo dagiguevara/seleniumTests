@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class loginElements {
 	
 
-	WebDriver driver;
+	public WebDriver driver;
 	
 	public loginElements(WebDriver ldriver) {
 		this.driver = ldriver;
