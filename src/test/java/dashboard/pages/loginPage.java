@@ -1,20 +1,12 @@
-package pageElements;
+package dashboard.pages;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
 
 
-public class loginElements {
-	
 
-	public WebDriver driver;
-	
-	public loginElements(WebDriver ldriver) {
-		this.driver = ldriver;
-	}
+public class loginPage { 
 	
 	
 	@FindBy(name="email")
@@ -35,6 +27,11 @@ public class loginElements {
 		emailElement.sendKeys(email);
 		passwordElement.sendKeys(password);
 		
+	}
+	
+	public void login() {
+		setCredentials("dagiguevara@gmail.com", "Password01");
+		clickSignIn();
 	}
 	
 	
