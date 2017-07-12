@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="roadrurnner.dashboard.loginTestCase">
+      <class name="roadrurnner.dashboard.NewTest">
         <methods>
           <include name="afterMethod"/>
-          <include name="fuck"/>
+          <include name="f"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- roadrurnner.dashboard.loginTestCase -->
+      </class> <!-- roadrurnner.dashboard.NewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

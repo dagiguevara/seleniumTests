@@ -16,7 +16,7 @@ public class loginTestCase {
   
 	
 	@Test
-  public void fuck() throws InterruptedException {
+  public void sucessLogin() throws InterruptedException {
 	  
 	  
 	  login_page.setCredentials("dagiguevara@gmail.com", "Password01");
@@ -26,9 +26,6 @@ public class loginTestCase {
   }
   @AfterClass
   public void afterMethod() {
-	//WebDriver driver = null;
-	//browserFactory quit_browser = PageFactory.initElements(driver, browserFactory.class);
-	//quit_browser.browserQuit();
 	
 	login_page.driver.quit();
  

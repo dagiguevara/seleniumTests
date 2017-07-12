@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="995" started-at="2017-07-11T21:54:20Z" finished-at="2017-07-11T21:54:21Z">
+  <suite name="Default suite" duration-ms="8354" started-at="2017-07-12T16:40:27Z" finished-at="2017-07-12T16:40:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="995" started-at="2017-07-11T21:54:20Z" finished-at="2017-07-11T21:54:21Z">
-      <class name="roadrurnner.dashboard.loginTestCase">
-        <test-method status="PASS" signature="fuck()[pri:0, instance:roadrurnner.dashboard.loginTestCase@350aac89]" name="fuck" duration-ms="485" started-at="2017-07-11T15:54:20Z" finished-at="2017-07-11T15:54:21Z">
+    <test name="Default test" duration-ms="8354" started-at="2017-07-12T16:40:27Z" finished-at="2017-07-12T16:40:36Z">
+      <class name="roadrurnner.dashboard.NewTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:roadrurnner.dashboard.NewTest@1794d431]" name="beforeMethod" is-config="true" duration-ms="8307" started-at="2017-07-12T10:40:27Z" finished-at="2017-07-12T10:40:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fuck -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:roadrurnner.dashboard.loginTestCase@350aac89]" name="afterMethod" is-config="true" duration-ms="479" started-at="2017-07-11T15:54:21Z" finished-at="2017-07-11T15:54:21Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:roadrurnner.dashboard.NewTest@1794d431]" name="f" duration-ms="14" started-at="2017-07-12T10:40:36Z" finished-at="2017-07-12T10:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:roadrurnner.dashboard.NewTest@1794d431]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-07-12T10:40:36Z" finished-at="2017-07-12T10:40:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- roadrurnner.dashboard.loginTestCase -->
+      </class> <!-- roadrurnner.dashboard.NewTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
