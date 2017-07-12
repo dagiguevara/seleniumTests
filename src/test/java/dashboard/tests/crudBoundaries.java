@@ -2,6 +2,7 @@ package dashboard.tests;
 
 import org.testng.annotations.Test;
 
+import dashboard.pages.boundariesPage;
 import dashboard.pages.homePage;
 import dashboard.pages.loginPage;
 import dashboard.pages.mapPage;
@@ -20,6 +21,7 @@ public class crudBoundaries {
 	loginPage login_page = PageFactory.initElements(driver, loginPage.class);
 	homePage home = PageFactory.initElements(driver, homePage.class);
 	mapPage map = PageFactory.initElements(driver, mapPage.class);
+	boundariesPage boundary = PageFactory.initElements(driver, boundariesPage.class);
 	
 	
   @Test
@@ -29,6 +31,8 @@ public class crudBoundaries {
 	 home.homeClick();
 	 Thread.sleep(5000);
 	 map.mapClick();
+	 boundary.addNewBoundary("office9", "tegucigapla");
+	 
 	  
 	
   }

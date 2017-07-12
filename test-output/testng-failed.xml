@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="roadrurnner.dashboard.crudBoundaries">
+      <class name="dashboard.tests.crudBoundaries">
         <methods>
           <include name="afterMethod"/>
-          <include name="beforeMethod"/>
           <include name="boundaries"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- roadrurnner.dashboard.crudBoundaries -->
+      </class> <!-- dashboard.tests.crudBoundaries -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
