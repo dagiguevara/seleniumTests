@@ -49,7 +49,7 @@
     <version>2.20</version>
     <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>test.xml</suiteXmlFile>
+            <suiteXmlFile>dashboard/test.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration> 
         </plugin>
