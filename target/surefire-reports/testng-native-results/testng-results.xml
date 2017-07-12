@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="828" started-at="2017-07-12T00:16:51Z" finished-at="2017-07-12T00:16:52Z">
+  <suite name="Surefire suite" duration-ms="873" started-at="2017-07-12T00:48:37Z" finished-at="2017-07-12T00:48:38Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="828" started-at="2017-07-12T00:16:51Z" finished-at="2017-07-12T00:16:52Z">
+    <test name="Surefire test" duration-ms="873" started-at="2017-07-12T00:48:37Z" finished-at="2017-07-12T00:48:38Z">
       <class name="roadrurnner.dashboard.loginTestCase">
-        <test-method status="PASS" signature="fuck()[pri:0, instance:roadrurnner.dashboard.loginTestCase@54e1c68b]" name="fuck" duration-ms="453" started-at="2017-07-11T18:16:51Z" finished-at="2017-07-11T18:16:51Z">
+        <test-method status="PASS" signature="fuck()[pri:0, instance:roadrurnner.dashboard.loginTestCase@d9345cd]" name="fuck" duration-ms="499" started-at="2017-07-11T18:48:37Z" finished-at="2017-07-11T18:48:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fuck -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:roadrurnner.dashboard.loginTestCase@54e1c68b]" name="afterMethod" is-config="true" duration-ms="350" started-at="2017-07-11T18:16:51Z" finished-at="2017-07-11T18:16:52Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:roadrurnner.dashboard.loginTestCase@d9345cd]" name="afterMethod" is-config="true" duration-ms="347" started-at="2017-07-11T18:48:38Z" finished-at="2017-07-11T18:48:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- roadrurnner.dashboard.loginTestCase -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>
