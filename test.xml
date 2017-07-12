@@ -1,7 +1,7 @@
 <suite name="TestSuite" parallel="tests">
 <test name="Chrome Test">
 	<classes>
-		<class name="roadrunner.dashboard.loginTestCase"></class>
+		<class name="roadrurnner.dashboard.loginTestCase"></class>
 	</classes>
 </test>
 </suite>
