@@ -25,6 +25,9 @@ public class boundariesPage {
 		@FindBy(xpath=".//*[@id='app']/div[4]/div/div[2]/form/div[2]/div[6]/button")
 		WebElement saveBoundary;
 		
+		@FindBy(xpath=".//*[@id='app']/div[4]/div/div[2]/div[2]/div[3]/div[3]")
+		WebElement existingBoundary;
+		
 		public void addNewBoundary(String name, String address) {
 			newBoundary.click();	
 			selectDevice.click();
@@ -33,6 +36,15 @@ public class boundariesPage {
 			boundaryAddress.sendKeys(address);
 			saveBoundary.click();
 		}
+		
+		public void updateBoundary(String name, String address) throws InterruptedException {
+			existingBoundary.click();
+			boundaryName.sendKeys(name);
+			boundaryAddress.sendKeys(address);
+			saveBoundary.click();
+			Thread.sleep(3000);
+		}
+		
 		
 		
 		

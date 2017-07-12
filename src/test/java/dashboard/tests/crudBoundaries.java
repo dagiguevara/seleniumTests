@@ -32,6 +32,7 @@ public class crudBoundaries {
 	 Thread.sleep(5000);
 	 map.mapClick();
 	 boundary.addNewBoundary("office9", "tegucigapla");
+	 boundary.updateBoundary("donaldoffice", "Paris, France");
 	 
 	  
 	
@@ -39,6 +40,8 @@ public class crudBoundaries {
   @BeforeMethod
   public void beforeMethod() {
 	  login_page.login();
+	  
+	  
 		  
   }
 
