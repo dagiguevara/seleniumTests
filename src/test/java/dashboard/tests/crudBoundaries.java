@@ -9,6 +9,7 @@ import dashboard.pages.mapPage;
 import factory.Browser;
 
 import org.testng.annotations.BeforeMethod;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
@@ -32,8 +33,10 @@ public class crudBoundaries {
 	 Thread.sleep(5000);
 	 map.mapClick();
 	 boundary.addNewBoundary("office9", "tegucigapla");
-	 boundary.updateBoundary("donaldoffice", "Paris, France");
-	 
+	 boundary.updateBoundary("Office99donald", "Paris, France");
+	 boundary.deleteBoundary();
+	 Alert alert = driver.switchTo().alert();
+	alert.accept();
 	  
 	
   }
