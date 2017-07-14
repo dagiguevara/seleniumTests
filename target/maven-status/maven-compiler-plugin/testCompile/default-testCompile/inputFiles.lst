@@ -1,4 +1,9 @@
-/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/roadrurnner/dashboard/AppTest.java
-/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/pageElements/loginElements.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/dashboard/pages/boundariesPage.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/dashboard/pages/mapPage.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/dashboard/pages/loginPage.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/dashboard/tests/crudBoundaries.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/dashboard/pages/homePage.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/dashboard/pages/browserStack.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/dashboard/tests/loginTest.java
+/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/factory/Browser.java
 /Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/factory/browserFactory.java
-/Users/donaldguevara/eclipse-workspace/dashboard/src/test/java/roadrurnner/dashboard/loginTestCase.java

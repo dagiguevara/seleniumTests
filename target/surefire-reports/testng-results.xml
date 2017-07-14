@@ -2,20 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="990" started-at="2017-07-12T01:30:25Z" finished-at="2017-07-12T01:30:26Z">
+  <suite name="Single" duration-ms="15541" started-at="2017-07-14T23:51:43Z" finished-at="2017-07-14T23:51:59Z">
     <groups>
     </groups>
-    <test name="Chrome Test" duration-ms="990" started-at="2017-07-12T01:30:25Z" finished-at="2017-07-12T01:30:26Z">
-      <class name="roadrurnner.dashboard.loginTestCase">
-        <test-method status="PASS" signature="fuck()[pri:0, instance:roadrurnner.dashboard.loginTestCase@55634720]" name="fuck" duration-ms="601" started-at="2017-07-11T19:30:25Z" finished-at="2017-07-11T19:30:25Z">
+    <test name="SingleTest" duration-ms="15541" started-at="2017-07-14T23:51:43Z" finished-at="2017-07-14T23:51:59Z">
+      <class name="dashboard.pages.browserStack">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:dashboard.pages.browserStack@1e67b872]" name="setUp" is-config="true" duration-ms="3333" started-at="2017-07-14T17:51:43Z" finished-at="2017-07-14T17:51:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[single.conf.json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fuck -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:roadrurnner.dashboard.loginTestCase@55634720]" name="afterMethod" is-config="true" duration-ms="364" started-at="2017-07-11T19:30:25Z" finished-at="2017-07-11T19:30:26Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:0, instance:dashboard.pages.browserStack@1e67b872]" name="test" duration-ms="8575" started-at="2017-07-14T17:51:47Z" finished-at="2017-07-14T17:51:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- roadrurnner.dashboard.loginTestCase -->
-    </test> <!-- Chrome Test -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:dashboard.pages.browserStack@1e67b872]" name="tearDown" is-config="true" duration-ms="3602" started-at="2017-07-14T17:51:55Z" finished-at="2017-07-14T17:51:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dashboard.pages.browserStack -->
+    </test> <!-- SingleTest -->
+  </suite> <!-- Single -->
 </testng-results>
