@@ -1,6 +1,6 @@
 package dashboard.pages;
 
-import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -26,13 +26,13 @@ public class boundariesPage {
 		@FindBy(xpath=".//*[@id='app']/div[4]/div/div[2]/form/div[2]/div[6]/button")
 		WebElement saveBoundary;
 		
-		@FindBy(xpath=".//*[@id='app']/div[4]/div/div[2]/div[2]/div[3]/div[3]")
+		@FindBy(xpath=".//*[@id='app']/div[4]/div/div[2]/div[2]/div[3]/div[3]")  //  //*[@id="app"]/div[5]/div/div[2]/div[2]/div[3]/div[3]
 		WebElement existingBoundary;
 		
-		@FindBy(xpath=".//*[@id='app']/div[4]/div/div[2]/form/div[2]/div[6]/button[2]")
+		@FindBy(css="#app > div.map-info-container > div > div:nth-child(2) > form > div.field-container > div.actions > button:nth-child(2)")
 		WebElement deleteBoundary;
 		
-		@FindBy(xpath=".//*[@id='actions']/div/div[2]/div")
+		@FindBy(css=".delete-confirmation div.ui.button.ok")
 		WebElement confirmDelete;
 		
 		public void addNewBoundary(String name, String address) {
@@ -50,13 +50,18 @@ public class boundariesPage {
 			boundaryName.sendKeys(name);
 			boundaryAddress.clear();
 			boundaryAddress.sendKeys(address);
+			Thread.sleep(1000);
 			saveBoundary.click();
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 		}
 		
 		public void deleteBoundary() throws InterruptedException {
 			existingBoundary.click();
-			Thread.sleep(1000);;
+			
+			
+		}
+		
+		public void confirmDeleteBoundary() {
 			deleteBoundary.click();
 			confirmDelete.click();
 		}

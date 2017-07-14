@@ -9,7 +9,11 @@ import dashboard.pages.mapPage;
 import factory.Browser;
 
 import org.testng.annotations.BeforeMethod;
+
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterMethod;
@@ -33,11 +37,13 @@ public class crudBoundaries {
 	 Thread.sleep(5000);
 	 map.mapClick();
 	 boundary.addNewBoundary("office9", "tegucigapla");
-	 boundary.updateBoundary("Office99donald", "Paris, France");
-	 boundary.deleteBoundary();
-	 Alert alert = driver.switchTo().alert();
-	alert.accept();
-	  
+	 boundary.updateBoundary("Office99donald", "jhsjkhskjs");
+	 boundary.deleteBoundary(); //click delete
+	 driver.navigate().refresh();
+	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	 boundary.confirmDeleteBoundary();
+	 
+	 
 	
   }
   @BeforeMethod
