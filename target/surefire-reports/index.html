@@ -143,7 +143,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite verbose=&quot;0&quot; name=&quot;Single&quot;&gt;
   &lt;test name=&quot;SingleTest&quot;&gt;
-    &lt;parameter name=&quot;environment&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;bs&quot;/&gt;
     &lt;parameter name=&quot;config&quot; value=&quot;single.conf.json&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;dashboard.pages.browserStack&quot;/&gt;
@@ -190,12 +190,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test')
 data.setCell(0, 2, 'dashboard.pages.browserStack')
-data.setCell(0, 3, 8575);
+data.setCell(0, 3, 10525);
 window.suiteTableData['Single']= { tableData: data, tableDiv: 'times-div-Single'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Single">
               </div> <!-- times-div-Single -->
             </div> <!-- times-div -->
@@ -223,16 +223,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">dashboard.pages.browserStack</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(single.conf.json, chrome)</span>
+                <span class="method-name">setUp(single.conf.json, bs)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test</span>
-                <span class="method-start">3333 ms</span>
+                <span class="method-start">9548 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11909 ms</span>
+                <span class="method-start">20074 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
