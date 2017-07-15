@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite verbose="0" name="Failed suite [Single]">
   <test name="SingleTest(failed)">
-    <parameter name="environment" value="Safari"/>
+    <parameter name="environment" value="bs"/>
     <parameter name="config" value="single.conf.json"/>
     <classes>
       <class name="dashboard.pages.browserStack">

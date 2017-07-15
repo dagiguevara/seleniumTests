@@ -73,6 +73,7 @@ public class browserStack {
     @Test
     public void test() throws Exception {
         driver.get("http://roadrunner-dashboard-dev.s3-website-us-east-1.amazonaws.com/#!/signin");
+        driver.manage().window().maximize();
         driver.findElement(By.name("email")).sendKeys("dagiguevara@gmail.com");
         driver.findElement(By.name("password")).sendKeys("Password01");
         driver.findElement(By.xpath(".//*[@id='app']/div/div/div/form/button")).click();

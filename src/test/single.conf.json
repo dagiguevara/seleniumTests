@@ -8,13 +8,13 @@
     "browserstack.debug": true
   },
 
-  "environments": {
+"environments": {
   "bs": {
-    "os": "Windows",
-    "os_version": "10",
-    "browser": "IE",
-    "browser_version": "11.0",
-    "resolution": "1024x768"
+    "os": "OS X",
+    "os_version": "Sierra",
+    "browser": "Chrome",
+    "browser_version": "59.0",
+    "resolution": "1920x1080"
   }
 }
 }
