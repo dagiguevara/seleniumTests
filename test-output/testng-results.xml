@@ -1,95 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39" started-at="2017-07-15T00:29:34Z" finished-at="2017-07-15T00:29:34Z">
+  <suite name="Default suite" duration-ms="82967" started-at="2017-07-21T01:49:18Z" finished-at="2017-07-21T01:50:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39" started-at="2017-07-15T00:29:34Z" finished-at="2017-07-15T00:29:34Z">
-      <class name="dashboard.pages.browserStack">
-        <test-method status="FAIL" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:dashboard.pages.browserStack@7cd62f43]" name="setUp" is-config="true" duration-ms="0" started-at="2017-07-14T18:29:34Z" finished-at="2017-07-14T18:29:34Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'config' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in /private/var/folders/vv/qr48243x1qzfhmqvwxg8rcdh0000gn/T/testng-eclipse--1790972318/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'config' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in /private/var/folders/vv/qr48243x1qzfhmqvwxg8rcdh0000gn/T/testng-eclipse--1790972318/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+    <test name="Default test" duration-ms="82967" started-at="2017-07-21T01:49:18Z" finished-at="2017-07-21T01:50:41Z">
+      <class name="dashboard.tests.seleniumGrid">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:dashboard.tests.seleniumGrid@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="82910" started-at="2017-07-20T19:49:19Z" finished-at="2017-07-20T19:50:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="test()[pri:0, instance:dashboard.pages.browserStack@7cd62f43]" name="test" duration-ms="0" started-at="2017-07-14T18:29:34Z" finished-at="2017-07-14T18:29:34Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'config' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in /private/var/folders/vv/qr48243x1qzfhmqvwxg8rcdh0000gn/T/testng-eclipse--1790972318/testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'config' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
-in /private/var/folders/vv/qr48243x1qzfhmqvwxg8rcdh0000gn/T/testng-eclipse--1790972318/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:dashboard.tests.seleniumGrid@5c3bd550]" name="f" duration-ms="13" started-at="2017-07-20T19:50:41Z" finished-at="2017-07-20T19:50:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- dashboard.pages.browserStack -->
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:dashboard.tests.seleniumGrid@5c3bd550]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-07-20T19:50:41Z" finished-at="2017-07-20T19:50:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- dashboard.tests.seleniumGrid -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="dashboard.pages.browserStack">
+      <class name="dashboard.tests.seleniumGrid">
         <methods>
-          <include name="test"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="f"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- dashboard.pages.browserStack -->
+      </class> <!-- dashboard.tests.seleniumGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

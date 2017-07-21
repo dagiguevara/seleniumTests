@@ -4,7 +4,7 @@
         <parameter name="environment" value="bs"/>
         
         <classes>
-            <class name="dashboard.pages.browserStack"/>
+            <class name="dashboard.tests.seleniumGrid"/>
         </classes>
     </test>
 </suite>
