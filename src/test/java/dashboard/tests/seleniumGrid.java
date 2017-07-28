@@ -8,11 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CommandExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 public class seleniumGrid {
 RemoteWebDriver driver;
 	
@@ -22,18 +24,17 @@ public void f() {
 	  
   }
   @BeforeMethod
-  public void beforeMethod() throws IOException {
-	  System.setProperty("webdriver.chrome.driver", "/Users/donaldguevara/Desktop/selenium/Roadrunner/chromedriver");
+  public void beforeMethod() throws IOException, InterruptedException {
+	  //System.setProperty("webdriver.chrome.driver", "/Users/donaldguevara/Desktop/selenium/Roadrunner/chromedriver");
 	  
 	  DesiredCapabilities capability = DesiredCapabilities.chrome();
 		capability.setCapability("version", "");
 		capability.setCapability("platform", "LINUX");
-		driver  = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"), capability);
-		driver.manage().window().maximize();
-		driver.get("http://roadrunner-dashboard-dev.s3-website-us-east-1.amazonaws.com/#!/signin");
-		driver.findElement(By.name("email")).sendKeys("dagiguevara@gmail.com");
-		driver.findElement(By.name("password")).sendKeys("Password01");
-		driver.findElement(By.xpath(".//*[@id='app']/div/div/div/form/button")).click();
+		driver  = new RemoteWebDriver(new URL("http://selenium-env.hubhhmz5hp.us-east-1.elasticbeanstalk.com/wd/hub"), capability);
+		driver.get("http://google.hn");
+		driver.manage().timeouts().implicitlyWait(130, TimeUnit.SECONDS);
+	
+
 		
 	  
   }

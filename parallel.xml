@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="aqua gem parallel" parallel="test" thread-count="2"
+configfailurepolicy="continue">
+<parameter name="hostName" value="localhost:"/>
+<parameter name="portName" value="4446"/>
+<parameter name="Grid" value="true"/>
+
+<test name="test">
+<classes>
+<class name="parallel.test1"/>
+<class name="parallel.test2"/>
+</classes>
+</test>
+<test name="test3">
+<classes>
+<class name="parallel.test1"/>
+<class name="parallel.test2"/>
+</classes>
+</test>
+
+
+
+
+
+
+
+
+</suite>
