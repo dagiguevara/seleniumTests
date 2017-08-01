@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" configfailurepolicy="continue" name="Failed suite [aqua gem parallel]">
+  <parameter name="hostName" value="localhost:"/>
+  <parameter name="Grid" value="true"/>
+  <parameter name="portName" value="4446"/>
+  <test name="test(failed)">
+    <classes>
+      <class name="parallel.test2">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- parallel.test2 -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [aqua gem parallel] -->

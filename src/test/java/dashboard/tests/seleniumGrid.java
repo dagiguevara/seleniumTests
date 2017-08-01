@@ -1,10 +1,16 @@
 package dashboard.tests;
 
 import org.testng.annotations.Test;
+
+import com.testingbot.testingbotrest.TestingbotREST;
+
+import factory.bot;
+
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CommandExecutor;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -15,25 +21,29 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import factory.bot;
 public class seleniumGrid {
-RemoteWebDriver driver;
-	
-	
-  @Test
+
+	RemoteWebDriver driver;
+	static String username = "dagiguevara%40gmail.com"; // Your username
+    static String authkey = "ub965ee28b7f8c5f";  // Your authkey
+    String testScore = "unset";
+  
+@Test
 public void f() {
+	driver.getSessionId();
+	driver.get("http://google.hn");;
 	  
   }
   @BeforeMethod
-  public void beforeMethod() throws IOException, InterruptedException {
-	  //System.setProperty("webdriver.chrome.driver", "/Users/donaldguevara/Desktop/selenium/Roadrunner/chromedriver");
-	  
-	  DesiredCapabilities capability = DesiredCapabilities.chrome();
-		capability.setCapability("version", "");
-		capability.setCapability("platform", "LINUX");
-		driver  = new RemoteWebDriver(new URL("http://selenium-env.hubhhmz5hp.us-east-1.elasticbeanstalk.com/wd/hub"), capability);
-		driver.get("http://google.hn");
-		driver.manage().timeouts().implicitlyWait(130, TimeUnit.SECONDS);
-	
+  public void setUp() throws Exception {
+      DesiredCapabilities capabillities = DesiredCapabilities.firefox();
+      capabillities.setCapability("version", "latest");
+      capabillities.setCapability("platform", Platform.WINDOWS);
+      capabillities.setCapability("name", "Testing Selenium");
+
+      driver = new RemoteWebDriver(
+              new URL("http://" + username + ":" + authkey +"@hub.crossbrowsertesting.com:80/wd/hub"),capabillities);
 
 		
 	  
@@ -41,6 +51,7 @@ public void f() {
 
   @AfterMethod
   public void afterMethod() {
+	  driver.quit();
   }
 
 }
