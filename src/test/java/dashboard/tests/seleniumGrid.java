@@ -8,6 +8,7 @@ import factory.bot;
 
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,6 +42,7 @@ public void f() {
       capabillities.setCapability("version", "latest");
       capabillities.setCapability("platform", Platform.WINDOWS);
       capabillities.setCapability("name", "Testing Selenium");
+      
 
       driver = new RemoteWebDriver(
               new URL("http://" + username + ":" + authkey +"@hub.crossbrowsertesting.com:80/wd/hub"),capabillities);
